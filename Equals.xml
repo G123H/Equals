@@ -86,5 +86,8 @@
         </next>
       </block>
     </statement>
+    <next>
+      <block type="oled_cleardisplay" id="147"></block>
+    </next>
   </block>
 </xml>
