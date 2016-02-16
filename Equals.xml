@@ -14,7 +14,7 @@
         </value>
         <next>
           <block type="oled_drawtext" id="35">
-            <field name="TEXT">1     equals 3 =</field>
+            <field name="TEXT">3     equals 3 =</field>
             <next>
               <block type="oled_drawnumber" id="44" inline="true">
                 <value name="NUMBER">
@@ -22,7 +22,7 @@
                     <field name="OP">EQ</field>
                     <value name="A">
                       <block type="math_number" id="64">
-                        <field name="NUM">1</field>
+                        <field name="NUM">3</field>
                       </block>
                     </value>
                     <value name="B">
@@ -46,7 +46,7 @@
                     </value>
                     <next>
                       <block type="oled_drawtext" id="69">
-                        <field name="TEXT">1 NOT equals 3 =</field>
+                        <field name="TEXT">3 NOT equals 3 =</field>
                         <next>
                           <block type="oled_drawnumber" id="70" inline="true">
                             <value name="NUMBER">
@@ -54,7 +54,7 @@
                                 <field name="OP">NEQ</field>
                                 <value name="A">
                                   <block type="math_number" id="72">
-                                    <field name="NUM">1</field>
+                                    <field name="NUM">3</field>
                                   </block>
                                 </value>
                                 <value name="B">
