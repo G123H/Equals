@@ -1,69 +1,81 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="oled_cleardisplay" id="9" x="223" y="130">
+  <block type="oled_cleardisplay" id="1" x="93" y="106">
     <next>
-      <block type="oled_setcursor" id="18" inline="true">
+      <block type="oled_setcursor" id="2" inline="true">
         <value name="STARTX">
-          <block type="math_number" id="25">
+          <block type="math_number" id="3">
             <field name="NUM">0</field>
           </block>
         </value>
         <value name="STARTY">
-          <block type="math_number" id="26">
+          <block type="math_number" id="4">
             <field name="NUM">0</field>
           </block>
         </value>
         <next>
-          <block type="oled_drawtext" id="35">
+          <block type="oled_drawtext" id="5">
             <field name="TEXT">3     equals 3 =</field>
             <next>
-              <block type="oled_drawnumber" id="44" inline="true">
+              <block type="oled_drawnumber" id="6" inline="true">
                 <value name="NUMBER">
-                  <block type="logic_compare" id="63" inline="true">
+                  <block type="logic_compare" id="7" inline="true">
                     <field name="OP">EQ</field>
                     <value name="A">
-                      <block type="math_number" id="64">
+                      <block type="math_number" id="8">
                         <field name="NUM">3</field>
                       </block>
                     </value>
                     <value name="B">
-                      <block type="math_number" id="65">
+                      <block type="math_number" id="9">
                         <field name="NUM">3</field>
                       </block>
                     </value>
                   </block>
                 </value>
                 <next>
-                  <block type="oled_setcursor" id="66" inline="true">
+                  <block type="oled_setcursor" id="10" inline="true">
                     <value name="STARTX">
-                      <block type="math_number" id="67">
+                      <block type="math_number" id="11">
                         <field name="NUM">0</field>
                       </block>
                     </value>
                     <value name="STARTY">
-                      <block type="math_number" id="68">
+                      <block type="math_number" id="12">
                         <field name="NUM">10</field>
                       </block>
                     </value>
                     <next>
-                      <block type="oled_drawtext" id="69">
+                      <block type="oled_drawtext" id="13">
                         <field name="TEXT">3 NOT equals 3 =</field>
                         <next>
-                          <block type="oled_drawnumber" id="70" inline="true">
+                          <block type="oled_drawnumber" id="14" inline="true">
                             <value name="NUMBER">
-                              <block type="logic_compare" id="71" inline="true">
+                              <block type="logic_compare" id="15" inline="true">
                                 <field name="OP">NEQ</field>
                                 <value name="A">
-                                  <block type="math_number" id="72">
+                                  <block type="math_number" id="16">
                                     <field name="NUM">3</field>
                                   </block>
                                 </value>
                                 <value name="B">
-                                  <block type="math_number" id="73">
+                                  <block type="math_number" id="17">
                                     <field name="NUM">3</field>
                                   </block>
                                 </value>
                               </block>
                             </value>
+                            <next>
+                              <block type="robot_delay" id="25" inline="true">
+                                <value name="DELAY">
+                                  <block type="math_number" id="26">
+                                    <field name="NUM">1000</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="oled_cleardisplay" id="27"></block>
+                                </next>
+                              </block>
+                            </next>
                           </block>
                         </next>
                       </block>
